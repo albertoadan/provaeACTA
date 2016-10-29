@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="MySQLHibernateTest">
+ 
+<!--	 <property name="connection.datasource">java:comp/env/jdbc/eActaConn</property>-->
+ 
+  <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.password">ccdhp4040..</property> 
+<!--   <property name="hibernate.connection.password">u7p67Yqx</property> -->
+   <property name="hibernate.connection.url">jdbc:mysql://31.47.76.83:3306/eActa</property> 
+   <property name="hibernate.connection.username">root</property> 
+<!--   <property name="hibernate.connection.username">eacta</property> -->
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+<!--   <property name="hibernate.search.autoregister_listeners">false</property> -->
+  <property name="hibernate.show_sql">false</property>
+  <property name="hibernate.connection.autocommit">true</property>
+  <mapping resource="es/fecapa/eacta/db/Eacta_vw_partit.hbm.xml"/>
+  <mapping resource="es/fecapa/eacta/db/Eacta_vw_usuari.hbm.xml"/>
+  <mapping resource="es/fecapa/eacta/db/EactaEvent.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="MySQLHibernateTest">
+ 
+	 <property name="connection.datasource">java:comp/env/jdbc/eActaConn</property>
+ 
+  <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.password">ccdhp4040..</property> 
+   <property name="hibernate.connection.password">u7p67Yqx</property> 
+   <property name="hibernate.connection.url">jdbc:mysql://31.47.76.83:3306/eActa</property> 
+   <property name="hibernate.connection.username">root</property> 
+   <property name="hibernate.connection.username">eacta</property> 
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+   <property name="hibernate.search.autoregister_listeners">false</property> 
+  <property name="hibernate.show_sql">false</property>
+  <property name="hibernate.connection.autocommit">true</property>
+  <mapping resource="es/fecapa/eacta/db/Eacta_vw_partit.hbm.xml"/>
+  <mapping resource="es/fecapa/eacta/db/Eacta_vw_usuari.hbm.xml"/>
+  <mapping resource="es/fecapa/eacta/db/EactaEvent.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>-->

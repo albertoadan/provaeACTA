@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-ago-2015 17:06:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="es.fecapa.eacta.db.EactaEvent" table="eacta_evento" catalog="eActa">
+		<composite-id name="id" class="es.fecapa.eacta.db.EactaEvent">
+			<key-property name="codpartit" type="long">
+				<column name="codpartit" />
+			</key-property>
+			<key-property name="id" type="long">
+				<column name="id" />
+			</key-property>
+		</composite-id>
+		<property name="tipoevent" type="long">
+			<column name="tipoevent" />
+		</property>
+		<property name="event" type="string">
+			<column name="event" length="50" />
+		</property>
+		<property name="part" type="string">
+			<column name="part" length="1" />
+		</property>
+		<property name="crono" type="string">
+			<column name="crono" length="5" />
+		</property>
+		<property name="localvisitant" type="string">
+			<column name="localvisitant" length="1" />
+		</property>
+		<property name="dorsal" type="java.lang.Long">
+			<column name="dorsal" />
+		</property>
+		<property name="atribut1" type="string">
+			<column name="atribut1" length="100" />
+		</property>
+		<property name="atribut2" type="string">
+			<column name="atribut2" length="100" />
+		</property>
+		<property name="atribut3" type="string">
+			<column name="atribut3" length="100" />
+		</property>
+		<property name="atribut4" type="string">
+			<column name="atribut4" length="200" />
+		</property>
+		<property name="atribut5" type="string">
+			<column name="atribut5" length="100" />
+		</property>
+		<property name="atribut6" type="string">
+			<column name="atribut6" length="100" />
+		</property>
+		<property name="atribut7" type="string">
+			<column name="atribut7" length="100" />
+		</property>
+		<property name="atribut8" type="string">
+			<column name="atribut8" length="100" />
+		</property>
+		<property name="atribut9" type="string">
+			<column name="atribut9" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>

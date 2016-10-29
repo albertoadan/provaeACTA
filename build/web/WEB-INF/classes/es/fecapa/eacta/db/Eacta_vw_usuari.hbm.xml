@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-jul-2015 17:32:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="es.fecapa.eacta.db.Eacta_vw_usuari" table="eacta_vw_usuari" catalog="eActa">
+        <id name="codusu" type="long">
+            <column name="codusu" />
+            <generator class="assigned" />
+        </id>
+        <property name="nom" type="string">
+            <column name="nom" length="50" />
+        </property>
+        <property name="cognoms" type="string">
+            <column name="cognoms" length="50" />
+        </property>
+        <property name="codtipusu" type="java.lang.Long">
+            <column name="codtipusu" />
+        </property>
+        <property name="codenti" type="java.lang.Long">
+            <column name="codenti" />
+        </property>
+        <property name="nomenti" type="string">
+            <column name="nomenti" length="50" />
+        </property>
+        <property name="adreca" type="string">
+            <column name="adreca" length="50" />
+        </property>
+        <property name="codpost" type="string">
+            <column name="codpost" length="8" />
+        </property>
+        <property name="poblacio" type="string">
+            <column name="poblacio" length="50" />
+        </property>
+        <property name="provincia" type="string">
+            <column name="provincia" length="50" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais" length="50" />
+        </property>
+        <property name="president" type="string">
+            <column name="president" length="50" />
+        </property>
+        <property name="telefon" type="string">
+            <column name="telefon" length="15" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="15" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="mobil" type="string">
+            <column name="mobil" length="15" />
+        </property>
+        <property name="web" type="string">
+            <column name="web" length="50" />
+        </property>
+        <property name="nif" type="string">
+            <column name="nif" length="10" />
+        </property>
+        <property name="sexe" type="java.lang.Character">
+            <column name="sexe" length="1" />
+        </property>
+        <property name="anynaixement" type="java.lang.Long">
+            <column name="anynaixement" />
+        </property>
+        <property name="codperfil" type="java.lang.Long">
+            <column name="codperfil" />
+        </property>
+        <property name="user" type="string">
+            <column name="user" length="32" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="25" />
+        </property>
+        <property name="actiu" type="java.lang.Byte">
+            <column name="actiu" />
+        </property>
+        <property name="codusualta" type="java.lang.Long">
+            <column name="codusualta" />
+        </property>
+        <property name="codusumod" type="java.lang.Long">
+            <column name="codusumod" />
+        </property>
+        <property name="dataalta" type="timestamp">
+            <column name="dataalta" length="19" />
+        </property>
+        <property name="datamod" type="timestamp">
+            <column name="datamod" length="19" />
+        </property>
+        <property name="codcomite" type="java.lang.Long">
+            <column name="codcomite" />
+        </property>
+        <property name="readonly" type="java.lang.Byte">
+            <column name="readonly" />
+        </property>
+        <property name="codidioma" type="java.lang.Long">
+            <column name="codidioma" />
+        </property>
+        <property name="codtecnic" type="java.lang.Long">
+            <column name="codtecnic" />
+        </property>
+        <property name="codtipdes" type="java.lang.Long">
+            <column name="codtipdes" />
+        </property>
+        <property name="codterri" type="java.lang.Long">
+            <column name="codterri" />
+        </property>
+        <property name="datamaster" type="java.lang.Byte">
+            <column name="datamaster" />
+        </property>
+        <property name="dataaccount" type="java.lang.Byte">
+            <column name="dataaccount" />
+        </property>
+    </class>
+</hibernate-mapping>

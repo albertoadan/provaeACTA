@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-jul-2015 17:32:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="es.fecapa.eacta.db.Eacta_vw_partit" table="eacta_vw_partit" catalog="eActa">
+        <id name="codpartit" type="long">
+            <column name="codpartit" />
+            <generator class="assigned" />
+        </id>
+        <property name="codcomp" type="java.lang.Long">
+            <column name="codcomp" />
+        </property>
+        <property name="codequiplocal" type="java.lang.Long">
+            <column name="codequiplocal" />
+        </property>
+        <property name="codequipvisit" type="java.lang.Long">
+            <column name="codequipvisit" />
+        </property>
+        <property name="jornada" type="java.lang.Long">
+            <column name="jornada" />
+        </property>
+        <property name="data" type="timestamp">
+            <column name="data" length="19" />
+        </property>
+        <property name="codtecnic" type="java.lang.Long">
+            <column name="codtecnic" />
+        </property>
+        <property name="codestpartit" type="java.lang.Long">
+            <column name="codestpartit" />
+        </property>
+        <property name="dataestpartit" type="timestamp">
+            <column name="dataestpartit" length="19" />
+        </property>
+        <property name="gollocal" type="java.lang.Long">
+            <column name="gollocal" />
+        </property>
+        <property name="golvisit" type="java.lang.Long">
+            <column name="golvisit" />
+        </property>
+        <property name="codsancioparloc" type="java.lang.Long">
+            <column name="codsancioparloc" />
+        </property>
+        <property name="codsancioparvis" type="java.lang.Long">
+            <column name="codsancioparvis" />
+        </property>
+        <property name="codusualta" type="java.lang.Long">
+            <column name="codusualta" />
+        </property>
+        <property name="codusumod" type="java.lang.Long">
+            <column name="codusumod" />
+        </property>
+        <property name="dataalta" type="timestamp">
+            <column name="dataalta" length="19" />
+        </property>
+        <property name="datamod" type="timestamp">
+            <column name="datamod" length="19" />
+        </property>
+        <property name="datajoc" type="timestamp">
+            <column name="datajoc" length="19" />
+        </property>
+        <property name="horajoc" type="string">
+            <column name="horajoc" length="50" />
+        </property>
+        <property name="inciesport" type="java.lang.Byte">
+            <column name="inciesport" />
+        </property>
+        <property name="incieco" type="java.lang.Byte">
+            <column name="incieco" />
+        </property>
+        <property name="avis" type="java.lang.Byte">
+            <column name="avis" />
+        </property>
+        <property name="pagat" type="java.lang.Byte">
+            <column name="pagat" />
+        </property>
+        <property name="acceptat" type="java.lang.Byte">
+            <column name="acceptat" />
+        </property>
+        <property name="ajornat" type="java.lang.Byte">
+            <column name="ajornat" />
+        </property>
+        <property name="inciajorna" type="java.lang.Byte">
+            <column name="inciajorna" />
+        </property>
+        <property name="finalitzat" type="java.lang.Byte">
+            <column name="finalitzat" />
+        </property>
+        <property name="suspes" type="java.lang.Byte">
+            <column name="suspes" />
+        </property>
+        <property name="comitecompeticio" type="java.lang.Byte">
+            <column name="comitecompeticio" />
+        </property>
+        <property name="sanciolocal" type="java.lang.Byte">
+            <column name="sanciolocal" />
+        </property>
+        <property name="sanciovisit" type="java.lang.Byte">
+            <column name="sanciovisit" />
+        </property>
+        <property name="comentari" type="string">
+            <column name="comentari" length="254" />
+        </property>
+        <property name="canvijornada" type="java.lang.Byte">
+            <column name="canvijornada" />
+        </property>
+        <property name="anullat" type="java.lang.Byte">
+            <column name="anullat" />
+        </property>
+        <property name="codtecnic2" type="java.lang.Long">
+            <column name="codtecnic2" />
+        </property>
+        <property name="codtecnic3" type="java.lang.Long">
+            <column name="codtecnic3" />
+        </property>
+        <property name="pistaadreca" type="string">
+            <column name="pistaadreca" length="50" />
+        </property>
+        <property name="pistacodpobla" type="string">
+            <column name="pistacodpobla" length="5" />
+        </property>
+        <property name="pistacodpost" type="string">
+            <column name="pistacodpost" length="8" />
+        </property>
+        <property name="pistapoblacio" type="string">
+            <column name="pistapoblacio" length="50" />
+        </property>
+        <property name="pistacodtippista" type="java.lang.Long">
+            <column name="pistacodtippista" />
+        </property>
+        <property name="pistacodtipmat" type="java.lang.Long">
+            <column name="pistacodtipmat" />
+        </property>
+        <property name="pistadimensions" type="string">
+            <column name="pistadimensions" length="50" />
+        </property>
+        <property name="pistaaforament" type="java.lang.Long">
+            <column name="pistaaforament" />
+        </property>
+        <property name="datamaxima" type="timestamp">
+            <column name="datamaxima" length="19" />
+        </property>
+        <property name="taxa" type="java.lang.Byte">
+            <column name="taxa" />
+        </property>
+        <property name="numresolucio" type="java.lang.Long">
+            <column name="numresolucio" />
+        </property>
+        <property name="aennumajornament" type="java.lang.Long">
+            <column name="aennumajornament" />
+        </property>
+        <property name="aendataalta" type="timestamp">
+            <column name="aendataalta" length="19" />
+        </property>
+        <property name="aendataproposta" type="timestamp">
+            <column name="aendataproposta" length="19" />
+        </property>
+        <property name="aencodestajor" type="java.lang.Long">
+            <column name="aencodestajor" />
+        </property>
+        <property name="asdnumajornament" type="java.lang.Long">
+            <column name="asdnumajornament" />
+        </property>
+        <property name="asddataalta" type="timestamp">
+            <column name="asddataalta" length="19" />
+        </property>
+        <property name="visdes" type="java.lang.Byte">
+            <column name="visdes" />
+        </property>
+        <property name="codtecnic4" type="java.lang.Long">
+            <column name="codtecnic4" />
+        </property>
+        <property name="nota" type="string">
+            <column name="nota" length="254" />
+        </property>
+        <property name="datadestec1" type="timestamp">
+            <column name="datadestec1" length="19" />
+        </property>
+        <property name="datadestec2" type="timestamp">
+            <column name="datadestec2" length="19" />
+        </property>
+        <property name="datadestec3" type="timestamp">
+            <column name="datadestec3" length="19" />
+        </property>
+        <property name="datadestec4" type="timestamp">
+            <column name="datadestec4" length="19" />
+        </property>
+        <property name="dataconftec1" type="timestamp">
+            <column name="dataconftec1" length="19" />
+        </property>
+        <property name="dataconftec2" type="timestamp">
+            <column name="dataconftec2" length="19" />
+        </property>
+        <property name="dataconftec3" type="timestamp">
+            <column name="dataconftec3" length="19" />
+        </property>
+        <property name="dataconftec4" type="timestamp">
+            <column name="dataconftec4" length="19" />
+        </property>
+        <property name="datarestec1" type="timestamp">
+            <column name="datarestec1" length="19" />
+        </property>
+        <property name="dataresdele" type="timestamp">
+            <column name="dataresdele" length="19" />
+        </property>
+        <property name="senseclassificar" type="java.lang.Byte">
+            <column name="senseclassificar" />
+        </property>
+        <property name="arbclubs" type="java.lang.Long">
+            <column name="arbclubs" />
+        </property>
+        <property name="arbimport" type="java.lang.Float">
+            <column name="arbimport" precision="12" scale="0" />
+        </property>
+        <property name="arbimportlocal" type="java.lang.Float">
+            <column name="arbimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="arbimportvisit" type="java.lang.Float">
+            <column name="arbimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="codposttecnic" type="string">
+            <column name="codposttecnic" length="8" />
+        </property>
+        <property name="nomtecnic" type="string">
+            <column name="nomtecnic" length="50" />
+        </property>
+        <property name="cognomstecnic" type="string">
+            <column name="cognomstecnic" length="50" />
+        </property>
+        <property name="poblaciotecnic" type="string">
+            <column name="poblaciotecnic" length="50" />
+        </property>
+        <property name="disttecnicequip" type="java.lang.Long">
+            <column name="disttecnicequip" />
+        </property>
+        <property name="supclubs" type="java.lang.Long">
+            <column name="supclubs" />
+        </property>
+        <property name="supimport" type="java.lang.Float">
+            <column name="supimport" precision="12" scale="0" />
+        </property>
+        <property name="supimportlocal" type="java.lang.Float">
+            <column name="supimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="supimportvisit" type="java.lang.Float">
+            <column name="supimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="partitsrebut" type="java.lang.Long">
+            <column name="partitsrebut" />
+        </property>
+        <property name="viatgeclubs" type="java.lang.Long">
+            <column name="viatgeclubs" />
+        </property>
+        <property name="viatgeimport" type="java.lang.Float">
+            <column name="viatgeimport" precision="12" scale="0" />
+        </property>
+        <property name="viatgeimportlocal" type="java.lang.Float">
+            <column name="viatgeimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="viatgeimportvisit" type="java.lang.Float">
+            <column name="viatgeimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="dietaclubs" type="java.lang.Long">
+            <column name="dietaclubs" />
+        </property>
+        <property name="dietaimport" type="java.lang.Float">
+            <column name="dietaimport" precision="12" scale="0" />
+        </property>
+        <property name="dietaimportlocal" type="java.lang.Float">
+            <column name="dietaimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="dietaimportvisit" type="java.lang.Float">
+            <column name="dietaimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="nocturnclubs" type="java.lang.Long">
+            <column name="nocturnclubs" />
+        </property>
+        <property name="nocturnimport" type="java.lang.Float">
+            <column name="nocturnimport" precision="12" scale="0" />
+        </property>
+        <property name="nocturnimportlocal" type="java.lang.Float">
+            <column name="nocturnimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="nocturnimportvisit" type="java.lang.Float">
+            <column name="nocturnimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="fjornadaclubs" type="java.lang.Long">
+            <column name="fjornadaclubs" />
+        </property>
+        <property name="fjornadaimport" type="java.lang.Float">
+            <column name="fjornadaimport" precision="12" scale="0" />
+        </property>
+        <property name="fjornadaimportlocal" type="java.lang.Float">
+            <column name="fjornadaimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="fjornadaimportvisit" type="java.lang.Float">
+            <column name="fjornadaimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="fhorariclubs" type="java.lang.Long">
+            <column name="fhorariclubs" />
+        </property>
+        <property name="fhorariimport" type="java.lang.Float">
+            <column name="fhorariimport" precision="12" scale="0" />
+        </property>
+        <property name="fhorariimportlocal" type="java.lang.Float">
+            <column name="fhorariimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="fhorariimportvisit" type="java.lang.Float">
+            <column name="fhorariimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="coddespextra" type="java.lang.Long">
+            <column name="coddespextra" />
+        </property>
+        <property name="importlocaltotal" type="java.lang.Float">
+            <column name="importlocaltotal" precision="12" scale="0" />
+        </property>
+        <property name="importvisittotal" type="java.lang.Float">
+            <column name="importvisittotal" precision="12" scale="0" />
+        </property>
+        <property name="importrebuttotal" type="java.lang.Float">
+            <column name="importrebuttotal" precision="12" scale="0" />
+        </property>
+        <property name="codrebut" type="java.lang.Long">
+            <column name="codrebut" />
+        </property>
+        <property name="actaxls" type="string">
+            <column name="actaxls" length="100" />
+        </property>
+        <property name="actapdf" type="string">
+            <column name="actapdf" length="100" />
+        </property>
+        <property name="datagenrebut" type="timestamp">
+            <column name="datagenrebut" length="19" />
+        </property>
+        <property name="supviatgeclubs" type="java.lang.Long">
+            <column name="supviatgeclubs" />
+        </property>
+        <property name="supviatgeimport" type="java.lang.Float">
+            <column name="supviatgeimport" precision="12" scale="0" />
+        </property>
+        <property name="supviatgeimportlocal" type="java.lang.Float">
+            <column name="supviatgeimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="supviatgeimportvisit" type="java.lang.Float">
+            <column name="supviatgeimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="supdietaclubs" type="java.lang.Long">
+            <column name="supdietaclubs" />
+        </property>
+        <property name="supdietaimport" type="java.lang.Float">
+            <column name="supdietaimport" precision="12" scale="0" />
+        </property>
+        <property name="supdietaimportlocal" type="java.lang.Float">
+            <column name="supdietaimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="supdietaimportvisit" type="java.lang.Float">
+            <column name="supdietaimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="serveiarbclubs" type="java.lang.Long">
+            <column name="serveiarbclubs" />
+        </property>
+        <property name="serveiarbimport" type="java.lang.Float">
+            <column name="serveiarbimport" precision="12" scale="0" />
+        </property>
+        <property name="serveiarbimportlocal" type="java.lang.Float">
+            <column name="serveiarbimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="serveiarbimportvisit" type="java.lang.Float">
+            <column name="serveiarbimportvisit" precision="12" scale="0" />
+        </property>
+        <property name="sup2viatgeclubs" type="java.lang.Long">
+            <column name="sup2viatgeclubs" />
+        </property>
+        <property name="sup2viatgeimport" type="java.lang.Float">
+            <column name="sup2viatgeimport" precision="12" scale="0" />
+        </property>
+        <property name="sup2viatgeimportlocal" type="java.lang.Float">
+            <column name="sup2viatgeimportlocal" precision="12" scale="0" />
+        </property>
+        <property name="sup2viatgeimportvisit" type="java.lang.Float">
+            <column name="sup2viatgeimportvisit" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

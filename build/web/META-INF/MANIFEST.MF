@@ -1,0 +1,9 @@
+Manifest-Version: 2.0
+Built-By: Albert Adan
+Build-Jdk: 1.8.0_31
+Created-By: Maven Integration for Eclipse
+Dependencies: org.apache.log4j
+Implementation-Version: 1.2.3
+Implementation-Title: eACTA
+
+
